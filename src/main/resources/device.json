@@ -1,4 +1,4 @@
-{ 
+{
   "res": 
   {
   "valid":true,
@@ -10,36 +10,48 @@
   
 	  "1234567":
 	  {
-		"responseCode":"0",
+		"error":"0",
 		"statusMessage":"Success"
 	  },
 	  
 	  "234567":
 	  {
-		"responseCode":"-1",
+		"error":"-1",
 		"statusMessage":"Invalid Esn"
 	  },
 	  
 	  "2345678":
 	  {
-		"responseCode":"-1",
+		"error":"-1",
 		"statusMessage":"Corrupted Data"
 	  },
 	  
-	   "error":
+	   "errors":
 	  {
-		"responseCode":"-1",
+		"error":"-1",
 		"statusMessage":"ESN Not Found"
 	  }
     
   },
+  
   "iccid": 
   {
-    "validateIccidResponse": {
-      "isIccidValid": true,
-      "invalidIccidReasonCode": "0",
-      "deviceSerialNumberHex": "35853905358422",
-      "activationStatus": "I"
-    }
+  
+  	"12345678901234":
+	  {
+		"error":"0",
+		"statusMessage":"Success"
+	  },
+	  
+	  "123456789012345":
+	  {
+		"error":"-1",
+		"statusMessage":"Invalid iccid"
+	  },
+     "errors":
+	  {
+		"error":"-1",
+		"statusMessage":"ICCID Not Found"
+	  }
   } 
 } 
