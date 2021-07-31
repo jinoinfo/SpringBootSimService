@@ -140,12 +140,12 @@ public class SpringbootSimserviceApplication extends SpringBootServletInitialize
 		      JSONObject jsonObj = (org.json.simple.JSONObject)obj;
 		      
 		  
-		      JSONObject deviceObj =  (JSONObject) jsonObj.get("device");
+		      /*JSONObject iccidObj =  (JSONObject) jsonObj.get("iccid");
 		  				
-			  System.out.println("deviceObj is .."+deviceObj);
+			  System.out.println("deviceObj is .."+iccidObj);
 				
-			  deviceCache.put("device", deviceObj);
-				
+			  deviceCache.put("iccidDetails", iccidObj);
+				*/
 							
 			  JSONObject simObj = (JSONObject) jsonObj.get("iccid");
 				

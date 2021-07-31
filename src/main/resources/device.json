@@ -4,54 +4,50 @@
   "valid":true,
   "role":"Admin"
   },
-  "device": 
+    
+  "iccid": 
   {
   
-  
-	  "1234567":
+  	 "12345678901234":
 	  {
 		"error":"0",
-		"statusMessage":"Success"
+		"deviceImage":"assets/phone_1.jpg",
+		"statusMessage":"Success",
+		"helpDeskKey": "Success"
 	  },
-	  
-	  "234567":
+
+	"913944064912345":
+	  {
+		"error":"0",
+		"statusMessage":"Success",
+		"helpDeskKey": "Success"
+	  },
+
+	"987654321054321":
+	  {
+		"error":"0",
+		"statusMessage":"Success",
+		"helpDeskKey": "Success"
+	  },	  
+	  "12345678901100":
 	  {
 		"error":"-1",
-		"statusMessage":"Invalid Esn"
+		"statusMessage":"Corrupted ICCID",
+		"helpDeskKey": "submitByUser"
 	  },
 	  
-	  "2345678":
+	  "12345678902200":
 	  {
-		"error":"-1",
-		"statusMessage":"Corrupted Data"
+		"error":"-2",
+		"statusMessage":"Application issue",
+		"helpDeskKey": "submitByHelpDesk"
 	  },
 	  
 	   "errors":
 	  {
-		"error":"-1",
-		"statusMessage":"ESN Not Found"
-	  }
-    
-  },
-  
-  "iccid": 
-  {
-  
-  	"12345678901234":
-	  {
-		"error":"0",
-		"statusMessage":"Success"
-	  },
-	  
-	  "123456789012345":
-	  {
-		"error":"-1",
-		"statusMessage":"Invalid iccid"
-	  },
-     "errors":
-	  {
-		"error":"-1",
-		"statusMessage":"ICCID Not Found"
+		"error":"-3",
+		"statusMessage":"Backend System issue",
+		"helpDeskKey": "helpDeskTicket"
 	  }
   } 
 } 
